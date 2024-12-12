@@ -1,0 +1,107 @@
+.letter, .border{
+    font-size: 70px;
+    line-height: 2;
+    border: 3px solid #000;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+}
+
+.containerWord{
+    max-width: 1260px;
+    display: flex;
+    justify-content: center;
+}
+input[type="text"]{
+    font-size: 70px;
+    line-height: 2;
+    border: 6px solid #000;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    color: #000;
+}
+.containerWrong p {
+    background: #284370;
+    max-width: 230px;
+    margin: 0 auto;
+    border: 6px solid #fff;
+    padding: 20px;
+    color: #c6c01f;
+    border-bottom: 0;
+}
+.containerWrong {
+    margin: 30px 0;
+}
+.containerWrong h3 {
+    text-transform: capitalize;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ button {
+    height: 113px;
+    border: 6px solid;
+    max-width: 113px;
+    width: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+ button:hover {
+    -webkit-box-shadow: -1px 10px 53px -23px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -1px 10px 53px -23px rgba(255, 255, 255, 1);
+    box-shadow: -1px 10px 53px -23px rgba(255, 255, 255, 1)
+}
+.containerWrong h3 {
+    background: #284370;
+    max-width: 330px;
+    margin: 0 auto;
+    border: 6px solid #fff;
+    padding: 20px;
+
+}
+.game {
+    position: relative;
+    background: #284370;
+    padding-bottom: 60px;
+    border: 14px solid #fff;
+    max-width: 1000px;
+    width: 100%;
+    color: #fff;
+  }
+  .game:before {
+    content: ".";
+    display: block;
+    font-size: 300px;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left:-325px;
+    border-right: 14px solid #284370 !important;
+    color: transparent;
+    top: 2vw;
+    background: #284370;
+    border: 14px solid #fff;
+  }
+  .game:after {
+    content: ".";
+    display: block;
+    font-size: 300px;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 1000px;
+    border-left: 14px solid #284370 !important;
+    color: transparent;
+    top: 2vw;
+    background: #284370;
+    border: 14px solid #fff;
+  }

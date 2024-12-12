@@ -1,0 +1,65 @@
+.containerRoulette {
+  margin: 20px 0 60px 0;
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+
+.roulette {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #0000ff;
+  transform: rotate(0deg);
+  transition: transform 1s ease;
+  overflow: hidden; /* Garante que os segmentos fiquem dentro da roleta */
+}
+
+.roulette.spinning {
+  animation: spin 3s ease-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.segmento {
+  position: absolute;
+  width: 50%;
+  height: 16.875%;
+  background-color: #f39c12;
+  color: #fff;
+  text-align: center;
+  left: -27px;
+  top: 89px;
+  font-size: 12px;
+  font-weight: bold;
+  transform-origin: 123% 100%;
+  transform: rotate(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.segmento.active {
+    background: black;
+}
+.segmento:nth-child(even) {
+  background-color: #e74c3c;
+}
+
+.segmento p {
+  margin: 0;
+}
+
+.roleta-wrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

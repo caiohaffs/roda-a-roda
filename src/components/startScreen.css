@@ -1,0 +1,7 @@
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #f7ec00, #fb8c04); /* Gradiente */
+    -webkit-background-clip: text; /* Clipa o gradiente ao texto */
+    -webkit-text-fill-color: transparent; /* Deixa o fundo transparente */
+  }

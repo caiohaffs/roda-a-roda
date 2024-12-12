@@ -1,0 +1,18 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat !important;
+  background: #3278f5;
+  background-size: cover;
+}
+
+button{
+  background-color: #0334a0;
+  color: #fff;
+  border: 0;
+}

@@ -23,7 +23,10 @@ const Game = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    if (!isRoletaSpun){
+        alert("você deve girar a roleta antes");
+        return;
+    }
     if (letter) {
       verifyLetters(letter);
       if (letters.includes(letter.toLowerCase())) {
@@ -88,7 +91,7 @@ const Game = ({
             value={letter}
             ref={letterInputRef}
           />
-          <button type="submit" disabled={!isRoletaSpun}>
+          <button type="submit" >
             Adivinhar
           </button>
         </form>

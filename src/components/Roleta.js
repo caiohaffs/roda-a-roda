@@ -50,7 +50,7 @@ const Roleta = ({ onStop }) => {
       });
 
       onStop(selectedSegment.texto); // Envia o texto do segmento selecionado
-    }, 2500);
+    }, 2900);
   };
 
   return (
